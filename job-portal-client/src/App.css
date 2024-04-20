@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.active {
+  color: #3575e2;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btns {
+  padding: 10px 20px;
+  margin-right: 6px;
+  background: transparent;
+  border: none;
+  border: 0.6px solid #ccc;
+  border-radius: 5px;
+  color: #323232;
+  cursor: pointer;
+}
+
+/* jobs page */
+
+.card {
+  margin: 20px;
+  border: 2px solid #ededed;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-reviews {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.rating-star {
+  color: #d5ab55;
+}
+
+.total-reviews {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bag-icon {
+  color: #535353;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.sidebar-items {
+  margin-top: 20px;
+}
+
+.sidebar-label-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 500px;
+}
+
+.sidebar-label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.all {
+  background: linear-gradient(blue, crimson);
+}
+.fle {
+  display: flex;
+  width: 20px;
+  height: 40px;
+}
+.fle button {
+  width: 75px; /* Adjust the width as needed */
+}
+
+.sidebar-label-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.sidebar-label-container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sidebar-label-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.sidebar-label-container .checkmark:after {
+  top: 6.4px;
+  left: 6.4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+
+.line {
+  margin-top: 3rem;
+  border-color: #f7f7f7;
+}
+
+/* create a job page */
+
+.create-job-flex {
+  @apply flex flex-col lg:flex-row items-center justify-between gap-8;
+}
+
+.create-job-input {
+  @apply block w-full flex-1 bg-white py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6;
+}
+
+.sign-up-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.sign-up-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.lab {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  letter-spacing: 0.5px;
+}
+.inp {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: 2px solid #2980b9;
+}
+.but {
+  margin: 20px 0;
+  width: 100%;
+  background-color: #3498db;
+  color: #080710;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+.but:hover {
+  background-color: #2980b9;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+.link {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  letter-spacing: 0.5px;
+   color: #3498db;
+  
+}
+.parag{
+   text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  letter-spacing: 0.5px;
+}
+.ad{
+  margin-top: -115px;
+}
+.link1{
+  text-decoration: none;
+  color: #3498db;
+  text-align: center;
+  margin-left: 65px;
+  
+}
+#ban{
+  margin-left: -420px;
+}
+.linkhome {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  letter-spacing: 0.5px;
+}
+.error-message {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: red;
+  letter-spacing: 0.5px;
+}
+.password-input {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.password-input img {
+  width: 20px;
+}
+.invalid {
+  border: 1px solid red; /* Add red border for invalid input */
+}
+ .contact {
+    min-height: auto;
+    padding-bottom: 7rem;
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  .contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 100px;
+  }
+  .contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: 0.5rem 0;
+  }
+  .contact form .input-box .input-field input,
+  .contact form .textarea-field textarea {
+    width: 50%;
+    height: 70%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: 0.6rem;
+    border: 0.2rem solid var(--main-color);
+  }
+  .contact form .input-box .input-field input::placeholder,
+  .contact form .textarea-field textarea::placeholder {
+    color: var(--text-color);
+  }
+  .contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    border-radius: 0.6rem;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .contact form .input-box .input-field input:focus ~ .focus,
+  .contact form .input-box .input-field input:valid ~ .focus,
+  .contact form .textarea-field textarea:focus ~ .focus,
+  .contact form .textarea-field textarea:valid ~ .focus {
+    width: 30%;
+  }
+  .contact form .textarea-field {
+    position: relative;
+    margin: 0.8rem 0 2.7rem;
+    display: flex;
+    margin-left: 360px;
+  }
+  .contact form .textarea-field textarea {
+    resize: none;
+  }
+  .contact form .btn-box.btns .btn {
+    cursor: pointer;
+  }
+
+  
+
+  :root {
+    --bg-color: white;
+    --second-bg-color: #112e42;
+    --text-color: black;
+    --main-color: #00abf0;
+  }
+
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+ 
+  /* App.css */
+.sign-up-container {
+  background-color: #F0F8FF;
+}
+
+/* App.css */
+.reset-password-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reset-password-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-right: 40px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.forgot-password-text {
+  margin-top: 15px;
+}
+
+
+    
+
